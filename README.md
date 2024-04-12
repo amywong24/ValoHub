@@ -2,7 +2,7 @@
 
 Submitted by: **Amy Wong**
 
-This web app: **insert description**
+This web app: **This website displays the card of each player with their rank and main agent they play on Valorant. You can use it to find people and add them to your team. Good luck on climbing!**
 
 Time spent: **X** hours spent in total
 

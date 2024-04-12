@@ -1,33 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import { Link, useRoutes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import CreateProfile from './components/CreateProfile';
+import EditProfile from './components/EditProfile';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [agentProfile, setAgentProfile] = useState([]);
+
+  const fetchProfile = async () => {
+    const { data, error } = await supabase.from("Posts").select();
+    if (error) {
+      console.error("Error fetching agent data:", error);
+    } else {
+      // Set the retrieved data to the state variable monkeyData
+      setAgentProfile(data);
+    }
+  };
+
+  useEffect(() => {
+    fetchProfile();
+  },[]);
+
+  let element = useRoutes([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+    {
+      path: "/create",
+      element: <CreateProfile />,
+    },
+    {
+      path: "/edit/:id",
+      element: <EditProfile data={agentProfile}/>
+    },
+
+  ]);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='App'>
+        <div className='sideNav'>
+          <Link to="/">
+            <p>Home</p>
+          </Link>
+          <Link to="/create">
+            <p>Create Agent Profile</p>
+          </Link>
+          <Link>
+            <p>Agent Profiles</p>
+          </Link>
+        </div>
+        {element}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
