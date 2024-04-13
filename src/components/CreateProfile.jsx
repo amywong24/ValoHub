@@ -5,11 +5,11 @@ const CreateProfile = () => {
     const [profile, setProfile] = useState({ player_name: "", rank: "" });
 
     const handleChange = (event) => {
-        const { player_name, value } = event.target;
+        const { name, value } = event.target;
         setProfile((prev) => {
             return {
                 ...prev,
-                [player_name]: value,
+                [name]: value,
             };
         });
     };
@@ -46,7 +46,6 @@ const CreateProfile = () => {
                     <p>Player Name:</p>
                     <input
                         type="text"
-                        id="player_name"
                         name="player_name"
                         placeholder="Enter player name"
                         value={profile.player_name}
@@ -57,7 +56,6 @@ const CreateProfile = () => {
                     <p>Rank: (Iron to Radiant)</p>
                     <input
                         type='text'
-                        id='rank'
                         name='rank'
                         placeholder='Enter rank'
                         value={profile.rank}

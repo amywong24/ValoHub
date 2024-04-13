@@ -31,10 +31,10 @@ const EditProfile = () => {
       }, [id]);
 
       const handleInputChange = (e) => {
-        const { player_name, value } = e.target;
+        const { name, value } = e.target;
         setFormData({
           ...formData,
-          [player_name]: value,
+          [name]: value,
         });
       };
 
@@ -62,19 +62,18 @@ const EditProfile = () => {
       };
 
       const handleDelete = async (e) => {
-        e.stopPropagation(); // This function stops event propagation (or bubbling up) from the DOM
-        console.log("Delete button clicked");
-    
-        const { error } = await supabase.from("Posts").delete().eq("id", id);
-    
-        if (error) {
-          console.error("Error deleting profile:", error);
-        } else {
-          window.alert("Profile deleted.");
-          window.location.href = "/list";
-        }
+        e.stopPropagation();
 
-        return
+        console.log("Delete button clicked");
+
+        const { error } = await supabase.from("Posts").delete().eq("id", id);
+
+        if (error) {
+            console.error("Error deleting profile:", error);
+        } else {
+            window.alert("Profile deleted.");
+            window.location.href = "/list";
+        }
     };
 
     if (!agentProfile) {
@@ -86,7 +85,7 @@ const EditProfile = () => {
             <h1>Update Your Agent Profile</h1>
             <h2>Current Profile Info:</h2>
             <h3>
-                Player name: {profile.player_name}, Rank: {profile.rank}, Main Agent: {profile.main_agent}
+                Player name: {agentProfile.player_name}, Rank: {agentProfile.rank}, Main Agent: {agentProfile.main_agent}
             </h3>
             <form onSubmit={handleSubmit}>
                 <div className='mini-form-container'>
@@ -114,168 +113,168 @@ const EditProfile = () => {
                             type="radio"
                             value="Astra"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Astra"}
+                            checked={agentProfile.main_agent === "Astra"}
                         />Astra</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Breach"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Breach"}
+                            checked={agentProfile.main_agent === "Breach"}
                         />Breach</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Brimstone"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Brimstone"}
+                            checked={agentProfile.main_agent === "Brimstone"}
                         />Brimstone</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Chamber"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Chamber"}
+                            checked={agentProfile.main_agent === "Chamber"}
                         />Chamber</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Clove"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Clove"}
+                            checked={agentProfile.main_agent === "Clove"}
                         />Clove</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Cypher"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Cypher"}
+                            checked={agentProfile.main_agent === "Cypher"}
                         />Cypher</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Deadlock"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Deadlock"}
+                            checked={agentProfile.main_agent === "Deadlock"}
                         />Deadlock</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Fade"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Fade"}
+                            checked={agentProfile.main_agent === "Fade"}
                         />Fade</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Gekko"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Gekko"}
+                            checked={agentProfile.main_agent === "Gekko"}
                         />Gekko</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Harbor"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Harbor"}
+                            checked={agentProfile.main_agent === "Harbor"}
                         />Harbor</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Iso"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Iso"}
+                            checked={agentProfile.main_agent === "Iso"}
                         />Iso</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Jett"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Jett"}
+                            checked={agentProfile.main_agent === "Jett"}
                         />Jett</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="KAYO"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "KAYO"}
+                            checked={agentProfile.main_agent === "KAYO"}
                         />KAYO</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Killjoy"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Killjoy"}
+                            checked={agentProfile.main_agent === "Killjoy"}
                         />Killjoy</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Neon"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Neon"}
+                            checked={agentProfile.main_agent === "Neon"}
                         />Neon</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Omen"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Omen"}
+                            checked={agentProfile.main_agent === "Omen"}
                         />Omen</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Phoenix"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Phoenix"}
+                            checked={agentProfile.main_agent === "Phoenix"}
                         />Phoenix</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Raze"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Raze"}
+                            checked={agentProfile.main_agent === "Raze"}
                         />Raze</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Reyna"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Reyna"}
+                            checked={agentProfile.main_agent === "Reyna"}
                         />Reyna</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Sage"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Sage"}
+                            checked={agentProfile.main_agent === "Sage"}
                         />Sage</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Skye"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Skye"}
+                            checked={agentProfile.main_agent === "Skye"}
                         />Skye</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Sova"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Sova"}
+                            checked={agentProfile.main_agent === "Sova"}
                         />Sova</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Viper"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Viper"}
+                            checked={agentProfile.main_agent === "Viper"}
                         />Viper</li>
                         <li><input
                             name="main_agent"
                             type="radio"
                             value="Yoru"
                             onChange={handleInputChange}
-                            checked={profile.main_agent === "Yoru"}
+                            checked={agentProfile.main_agent === "Yoru"}
                         />Yoru</li>
                     </ul>
                 </div>

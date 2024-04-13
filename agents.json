@@ -1,0 +1,242 @@
+[
+    {
+        "id": "Astra",
+        "main_agent": "Astra",
+        "description": "Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, she’s always eons ahead of her enemy’s next move.",
+        "voiceline": [
+            "I am on a higher plane, chale, literally!",
+            "BYB, fam. Going to astral to do them astral guardian things I do."
+        ],
+        "icon": "./src/agents/astra_icon.webp"
+    },
+    {
+        "id": "Breach",
+        "main_agent": "Breach",
+        "description": "Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground. The damage and disruption he inflicts ensures no fight is ever fair.",
+        "voiceline": [
+            "Stand in my way. I dare you.",
+            "Guns in my face? Just another Tuesday."
+        ],
+        "icon": "./src/agents/breach_icon.webp"
+    },
+    {
+        "id": "Brimstone",
+        "main_agent": "Brimstone",
+        "description": "Joining from the U.S.A., Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander.",
+        "voiceline": [
+            "They think I'm an old dog? Heh, I'll show 'em just how many tricks I know.",
+            "No one die on me! We're all going home."
+        ],
+        "icon": "./src/agents/brimstone_icon.webp"
+    },
+    {
+        "id": "Chamber",
+        "main_agent": "Chamber",
+        "description": "Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+        "voiceline": [
+            "You have good taste, my friend.",
+            "Do not worry, with me this will be easy. C'est simple comme bonjour."
+        ],
+        "icon": "./src/agents/chamber_icon.webp"
+    },
+    {
+        "id": "Clove",
+        "main_agent": "Clove",
+        "description": "Scottish troublemaker Clove makes mischief for enemies in both the heat of combat and the cold of death. The young immortal keeps foes guessing, even from beyond the grave, their return to the living only ever a moment away.",
+        "voiceline": [
+            "I've got all the time in the world.",
+            "Have I been aging, like, at all? Still not sure how this whole living forever thing works."
+        ],
+        "icon": "./src/agents/clove_icon.webp"
+    },
+    {
+        "id": "Cypher",
+        "main_agent": "Cypher",
+        "description": "The Moroccan information broker, Cypher is a one-man surveillance network who keeps tabs on the enemy’s every move. No secret is safe. No maneuver goes unseen. Cypher is always watching.",
+        "voiceline": [
+            "Nothing stays hidden from me. Nothing.",
+            "They're usually distracted once I reveal them. Make sure you take advantage."
+        ],
+        "icon": "./src/agents/cypher_icon.webp"
+    },
+    {
+        "id": "Deadlock",
+        "main_agent": "Deadlock",
+        "description": "Norwegian operative Deadlock deploys an array of cutting-edge nanowire to secure the battlefield from even the most lethal assault. No one escapes her vigilant watch, nor survives her unyielding ferocity.",
+        "voiceline": [
+            "Death is not an option.",
+            "Ammunition, time, life. These are all resources; spend them wisely."
+        ],
+        "icon": "./src/agents/deadlock_icon.webp"
+    },
+    {
+        "id": "Fade",
+        "main_agent": "Fade",
+        "description": "Turkish bounty hunter Fade unleashes the power of raw nightmare to seize enemy secrets. Attuned with terror itself, she hunts down targets and reveals their deepest fears - before crushing them in the dark.",
+        "voiceline": [
+            "Everyone is afraid of something.",
+            "I paid a heavy price to commune with Nightmare. Don't waste it."
+        ],
+        "icon": "./src/agents/fade_icon.webp"
+    },
+    {
+        "id": "Gekko",
+        "main_agent": "Gekko",
+        "description": "Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.",
+        "voiceline": [
+            "Wáchale güey, my crew is coming through.",
+            "So, game plan. What y'all feeling? I'm down for whatever."
+        ],
+        "icon": "./src/agents/gekko_icon.webp"
+    },
+    {
+        "id": "Harbor",
+        "main_agent": "Harbor",
+        "description": "Hailing from India's coast, Harbor storms the field wielding ancient technology with dominion over water. He unleashes frothing rapids and crushing waves to shield his allies, or pummel those that oppose him.",
+        "voiceline": [
+            "Together, we'll crush them.",
+            "Well equipped, well rested, and well fed. Couldn't ask for a better start!"
+        ],
+        "icon": "./src/agents/harbor_icon.webp"
+    },
+    {
+        "id": "Iso",
+        "main_agent": "Iso",
+        "description": "Chinese fixer for hire Iso goes into a flow state to dismantle the opposition. Reconfiguring ambient energy into bulletproof protection, he advances with focus towards his next duel to the death.",
+        "voiceline": [
+            "Enough training, it's time.",
+            "To them, we're trespassers. Their fight is justified. But we still have a job to do."
+        ],
+        "icon": "./src/agents/iso_icon.webp"
+    },
+    {
+        "id": "Jett",
+        "main_agent": "Jett",
+        "description": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
+        "voiceline": [
+            "Cool. Let's go.",
+            "Think you can keep up? Who am I kidding? You know you can't keep up."
+        ],
+        "icon": "./src/agents/jett_icon.webp"
+    },
+    {
+        "id": "KAYO",
+        "main_agent": "KAYO",
+        "description": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to suppress enemy abilities dismantles his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
+        "voiceline": [
+            "I'll take the lead. It cost enough to build me. Get your money's worth.",
+            "What's the plan, send the robot in first? Smart choice."
+        ],
+        "icon": "./src/agents/KAYO_icon.webp"
+    },
+    {
+        "id": "Killjoy",
+        "main_agent": "Killjoy",
+        "description": "The genius of Germany, Killjoy effortlessly secures key battlefield positions with her arsenal of inventions. If their damage doesn't take her enemies out, the debuff her robots provide will make short work of them.",
+        "voiceline": [
+            "Relax. I've already thought of everything.",
+            "Swarm grenades? Check. Killer robots? Check- oh, hah, don't worry, they're only killer when I say so."
+        ],
+        "icon": "./src/agents/killjoy_icon.webp"
+    },
+    {
+        "id": "Neon",
+        "main_agent": "Neon",
+        "description": "Filipino Agent, Neon, surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.",
+        "voiceline": [
+            "Move, or get zapped.",
+            "This covert ops thing, I kind of like it. Let's not mess that up."
+        ],
+        "icon": "./src/agents/neon_icon.webp"
+    },
+    {
+        "id": "Omen",
+        "main_agent": "Omen",
+        "description": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
+        "voiceline": [
+            "I am the beginning. I am the end.",
+            "If I must live in this nightmare, my enemies might as well join me."
+        ],
+        "icon": "./src/agents/omen_icon.webp"
+    },
+    {
+        "id": "Phoenix",
+        "main_agent": "Phoenix",
+        "description": "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms.",
+        "voiceline": [
+            "Just take a seat, I got this.",
+            "Yes, yes, it's me, autographs if we survive, yeah?"
+        ],
+        "icon": "./src/agents/phoenix_icon.webp"
+    },
+    {
+        "id": "Raze",
+        "main_agent": "Raze",
+        "description": "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”",
+        "voiceline": [
+            "Yes, I'm pumped!",
+            "Finally back out in the field! Let's go, there's so many new toys I want to try out!"
+        ],
+        "icon": "./src/agents/raze_icon.webp"
+    },
+    {
+        "id": "Reyna",
+        "main_agent": "Reyna",
+        "description": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her highly dependent on performance.",
+        "voiceline": [
+            "They have no idea how heartless I am.",
+            "It doesn't matter what this place used to be. Now it's just another graveyard."
+        ],
+        "icon": "./src/agents/reyna_icon.webp"
+    },
+    {
+        "id": "Sage",
+        "main_agent": "Sage",
+        "description": "The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.",
+        "voiceline": [
+            "I am both shield and sword.",
+            "Your duty is not over!"
+        ],
+        "icon": "./src/agents/sage_icon.webp"
+    },
+    {
+        "id": "Skye",
+        "main_agent": "Skye",
+        "description": "Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
+        "voiceline": [
+            "Alright! Where's the fight?",
+            "Remember everyone, if we survive, woodworking class tonight in the mess hall. Nimble hands, nimble minds."
+        ],
+        "icon": "./src/agents/skye_icon.webp"
+    },
+    {
+        "id": "Sova",
+        "main_agent": "Sova",
+        "description": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
+        "voiceline": [
+            "This bow has taken man and beast alike. I have found there is little difference.",
+            "Remember, the enemy defends this world. It is their home, and that makes them dangerous."
+        ],
+        "icon": "./src/agents/sova_icon.webp"
+    },
+    {
+        "id": "Viper",
+        "main_agent": "Viper",
+        "description": "The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and choke the enemy's vision. If the toxins don't kill her prey, her mind games surely will.",
+        "voiceline": [
+            "No one can hold their breath forever.",
+            "Welcome to my world!"
+        ],
+        "icon": "./src/agents/viper_icon.webp"
+    },
+    {
+        "id": "Yoru",
+        "main_agent": "Yoru",
+        "description": "Japanese native Yoru rips holes straight through reality to infiltrate enemy lines unseen. Using deception and aggression in equal measure, he gets the drop on each target before they know where to look.",
+        "voiceline": [
+            "I'll fight anybody. I'll fight everybody.",
+            "Should I shoot them in the face, or stab them in the back? I'll decide later."
+        ],
+        "icon": "./src/agents/yoru_icon.webp"
+    }
+]
