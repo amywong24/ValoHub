@@ -4,3 +4,23 @@
   padding: 2rem;
   text-align: center;
 }
+
+.sideNav {
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  font-size: 25px;
+  font-weight: bolder;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #cc018f;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideNav a {
+  color: black;
+  text-decoration: none;
+}

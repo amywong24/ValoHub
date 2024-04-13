@@ -53,13 +53,13 @@ function App() {
       <div className='App'>
         <div className='sideNav'>
           <Link to="/">
-            <p>Home</p>
+            <p className='header'>Home</p>
           </Link>
           <Link to="/create">
-            <p>Create Agent Profile</p>
+            <p className='header'>Create Agent Profile</p>
           </Link>
           <Link to="/gallery">
-            <p>Agent Profiles</p>
+            <p className='header'>Agent Profiles</p>
           </Link>
         </div>
         {element}

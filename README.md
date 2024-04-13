@@ -42,7 +42,7 @@ GIF created with LICEcap
 
 ## Notes
 
-Getting the site to display the agent details is probably the hardest as I have to create a separate JSON file for this to work. The paths for the images to display would work on one page and then the other wouldn't. I still definitely have a lot to learn with backend development but I'm grateful for working on this project. I wanted to at least make sure that it's functional and I will get into the CSS on my free time! :)
+Getting the site to display the agent details is probably the hardest as I have to create a separate JSON file for this to work. The paths for the images to display would work on one page and then the other wouldn't. I still definitely have a lot to learn with backend development but I'm grateful for working on this project. I wanted to at least make sure that it's functional and I will get into the CSS on my free time!
 
 ## License
 
