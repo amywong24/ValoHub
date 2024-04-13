@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 
 - [x] **A create form allows users to add new cremates**
 - [x] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
-- [] **The site displays a summary page of all the user's added crewmates**
+- [x] **The site displays a summary page of all the user's added crewmates**
 - [x] **A previously created crewmate can be updated from the crewmate list**
 - [x] **A previously created crewmate can be deleted from the crewmate list**
 - [x] **Each crewmate has a direct, unique link to an info page about them**
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/hVtFnJH.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/4Ci40NN.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
@@ -42,7 +42,7 @@ GIF created with LICEcap
 
 ## Notes
 
-Getting the site to display the agent details is probably the hardest as I have to create a separate JSON file for this to work. I'm still working on it at the moment.
+Getting the site to display the agent details is probably the hardest as I have to create a separate JSON file for this to work. The paths for the images to display would work on one page and then the other wouldn't. I still definitely have a lot to learn with backend development but I'm grateful for working on this project. I wanted to at least make sure that it's functional and I will get into the CSS on my free time! :)
 
 ## License
 

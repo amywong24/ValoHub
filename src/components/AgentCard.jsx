@@ -34,7 +34,7 @@ const AgentCard = ({ agent }) => {
       <div className="agent-card">
         <img src={agentIconImages[agent.main_agent]} alt={`${agent.main_agent} icon`} className="single-agent-icon" />
         <div className="button-container">
-          <Link to={`/details/${agent.id}`}>
+          <Link to={`/details/${agent.main_agent}`}>
             <button type="button">View Agent</button>
           </Link>
         </div>
