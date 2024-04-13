@@ -30,7 +30,7 @@ const AgentCard = ({ agent }) => {
   };
 
   return (
-    <div>
+    <div className="card-container">
       <div className="agent-card">
         <img src={agentIconImages[agent.main_agent]} alt={`${agent.main_agent} icon`} className="single-agent-icon" />
         <div className="button-container">

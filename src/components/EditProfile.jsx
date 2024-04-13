@@ -3,65 +3,65 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const EditProfile = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     const [agentProfile, setAgentProfile] = useState(null);
-    const[formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
         player_name: "",
         rank: "",
-        main_agent:"",
+        main_agent: "",
     })
 
     useEffect(() => {
         async function fetchProfile() {
-          const { data, error } = await supabase.from("Posts").select().eq("id", id).single(); // Assuming 'id' is unique, so use 'single' to get one record
-    
-          if (error) {
-            console.error("Error fetching data:", error);
-          } else {
-            setAgentProfile(data);
-            setFormData({
-              player_name: data.player_name,
-              rank: data.rank,
-              main_agent: data.main_agent,
-            });
-          }
-        }
-    
-        fetchProfile();
-      }, [id]);
+            const { data, error } = await supabase.from("Posts").select().eq("id", id).single(); // Assuming 'id' is unique, so use 'single' to get one record
 
-      const handleInputChange = (e) => {
+            if (error) {
+                console.error("Error fetching data:", error);
+            } else {
+                setAgentProfile(data);
+                setFormData({
+                    player_name: data.player_name,
+                    rank: data.rank,
+                    main_agent: data.main_agent,
+                });
+            }
+        }
+
+        fetchProfile();
+    }, [id]);
+
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({
-          ...formData,
-          [name]: value,
+            ...formData,
+            [name]: value,
         });
-      };
+    };
 
-      const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-    
+
         const { data, error } = await supabase
-          .from("Posts")
-          .update({
-            player_name: formData.player_name,
-            rank: formData.rank,
-            main_agent: formData.main_agent,
-          })
-          .eq("id", id);
-    
+            .from("Posts")
+            .update({
+                player_name: formData.player_name,
+                rank: formData.rank,
+                main_agent: formData.main_agent,
+            })
+            .eq("id", id);
+
         if (error) {
-          console.error("Error updating profile:", error);
+            console.error("Error updating profile:", error);
         } else {
-          // Display a confirmation message to the user
-          window.alert("Profile updated.");
-          // Reload the page
-          window.location.href = `/edit/${id}`;
+            // Display a confirmation message to the user
+            window.alert("Profile updated.");
+            // Reload the page
+            window.location.href = `/edit/${id}`;
         }
         return;
-      };
+    };
 
-      const handleDelete = async (e) => {
+    const handleDelete = async (e) => {
         e.stopPropagation();
 
         console.log("Delete button clicked");
@@ -78,7 +78,7 @@ const EditProfile = () => {
 
     if (!agentProfile) {
         return <div>Loading...</div>;
-      }
+    }
 
     return (
         <div className='whole-page'>
@@ -102,7 +102,7 @@ const EditProfile = () => {
                     <input
                         type='text'
                         name='rank'
-                        placeholder={formData.rank ? 'Enter rank': ''}
+                        placeholder={formData.rank ? 'Enter rank' : ''}
                         onChange={handleInputChange} />
                 </div>
                 <div className='mini-form-container'>
@@ -279,8 +279,10 @@ const EditProfile = () => {
                     </ul>
                 </div>
             </form>
-            <button type='submit' onClick={handleSubmit}>Update Profile</button>
-            <button className='delete' onClick={handleDelete}>Delete Profile</button>
+            <div className='button-container-2'>
+                <button className='submit' type='submit' onClick={handleSubmit}>Update Profile</button>
+                <button className='delete' onClick={handleDelete}>Delete Profile</button>
+            </div>
         </div>
     );
 };

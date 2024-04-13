@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-size: 20px;
 }
 
 .sideNav {
@@ -14,7 +15,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #cc018f;
+  background-color: #f8f419;
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
@@ -23,4 +24,56 @@
 .sideNav a {
   color: black;
   text-decoration: none;
+}
+
+.card-container {
+  gap: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.agent-card {
+  border-radius: 10px;
+  border-style: double;
+  border-color: #00000043;
+  height: 400px;
+  width: 600px;
+  max-width: 300px;
+  /* Adjust maximum width of each card */
+  box-shadow: 0 0 5px 2px #faf9f94d;
+  margin-bottom: 20px;
+  /* Adjust margin bottom to create space between rows */
+  padding: 25px;
+  text-align: center;
+  background-color: #d7740b;
+  font-size: 16px;
+}
+
+.single-agent-icon {
+  width: 200px;
+  height: 200px;
+}
+
+button {
+  background-color: rgb(255, 255, 0);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color .25s;
+}
+
+.submit {
+  margin-right: 10px;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.mini-form-container {
+  display: flex;
+  flex-direction: column;
 }
