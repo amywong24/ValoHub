@@ -93,7 +93,8 @@ const EditProfile = () => {
                     <input
                         type="text"
                         name="player_name"
-                        placeholder={formData.player_name ? "Enter player name" : ""}
+                        value={formData.player_name}
+                        placeholder={"Enter player name"}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -102,7 +103,8 @@ const EditProfile = () => {
                     <input
                         type='text'
                         name='rank'
-                        placeholder={formData.rank ? 'Enter rank' : ''}
+                        value={formData.rank}
+                        placeholder={'Enter rank'}
                         onChange={handleInputChange} />
                 </div>
                 <div className='mini-form-container'>
