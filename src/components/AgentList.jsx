@@ -25,8 +25,8 @@ const AgentList = () => {
     <div>
       <div className="main-page">
         <div className="whole-page">
+        <h1>Agent Profiles</h1>
           <div className="agent-gallery-container">
-            <h1>Agent Profiles</h1>
             {agents.length === 0 ? (
               <h2>No agents found!</h2>
             ) : (

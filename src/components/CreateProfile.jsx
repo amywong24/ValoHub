@@ -34,7 +34,7 @@ const CreateProfile = () => {
             console.log(error);
         }
 
-        window.location = "/";
+        window.location = "/gallery";
     };
 
 
