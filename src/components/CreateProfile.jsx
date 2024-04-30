@@ -41,6 +41,8 @@ const CreateProfile = () => {
     return (
         <div className='whole-page'>
             <h1>Create Your Agent Profile</h1>
+            <h2>For player name, type in your Riot Games username with the tag.</h2>
+            <h3>Ex: Sunshine#NA1</h3>
             <form>
                 <div className='mini-form-container'>
                     <p>Player Name:</p>
