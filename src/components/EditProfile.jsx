@@ -87,7 +87,7 @@ const EditProfile = () => {
             <h3>
                 Player name: {agentProfile.player_name}, Rank: {agentProfile.rank}, Main Agent: {agentProfile.main_agent}
             </h3>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='form-container'>
                 <div className='mini-form-container'>
                     <p>Player Name:</p>
                     <input
