@@ -5,6 +5,7 @@
   padding: 2rem;
   padding-left: 12%; /* Extra padding to account for the sideNav */
   text-align: center;
+  color: #FFFFFF;
 }
 
 .sideNav {
@@ -15,7 +16,8 @@
   font-weight: bolder;
   top: 0;
   left: 0;
-  background-color: #f8f419;
+  background-color: #F5F3F4;
+  color:#0B090A;
   padding: 15px 10px;
   display: flex;
   flex-direction: column;
@@ -23,8 +25,12 @@
 }
 
 .sideNav a {
-  color: black;
+  color: #0B090A;
   text-decoration: none;
+}
+
+.sideNav a:visited {
+  color: #0B090A;
 }
 
 .card-container {
@@ -36,9 +42,10 @@
   height: auto;
   width: 350px;
   text-align: center;
-  background-color: #d7740b;
+  background-color: #B1A7A6;
+  color:#0B090A;
   border-radius: 10px;
-  box-shadow: 0 0 5px 2px #faf9f94d;
+  box-shadow: 0 0 5px 2px #A4161A;
   font-size: 16px;
   margin-bottom: 20px; /* Space between rows */
   padding: 20px;
@@ -63,7 +70,7 @@
 }
 
 button {
-  background-color: rgb(255, 255, 0);
+  background-color: #E5383B;
   border-radius: 8px;
   border: 1px solid transparent;
   font-size: 1em;
