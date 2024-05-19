@@ -109,20 +109,199 @@ const EditProfile = () => {
                 </div>
                 <div className='mini-form-container'>
                     <p>Main Agent: </p>
-                    <ul className='radio-list'>
-                        {["Astra", "Breach", "Brimstone", "Chamber", "Clove", "Cypher", "Deadlock", "Fade", "Gekko", "Harbor", "Iso", "Jett", "KAYO", "Killjoy", "Neon", "Omen", "Phoenix", "Raze", "Reyna", "Sage", "Skye", "Sova", "Viper", "Yoru"].map((agent) => (
-                            <li className="radio-item" key={agent}>
-                                <input
-                                    id={agent}
-                                    name="main_agent"
-                                    type="radio"
-                                    value={agent}
-                                    onChange={handleInputChange}
-                                    checked={formData.main_agent === agent}
-                                />
-                                <label htmlFor={agent}>{agent}</label>
-                            </li>
-                        ))}
+                    <ul>
+                        <li><input
+                            id="Astra"
+                            name="main_agent"
+                            type="radio"
+                            value="Astra"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Astra"}
+                        />Astra</li>
+                        <li><input
+                            id="Breach"
+                            name="main_agent"
+                            type="radio"
+                            value="Breach"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Breach"}
+                        />Breach</li>
+                        <li><input
+                            id='Brimstone'
+                            name="main_agent"
+                            type="radio"
+                            value="Brimstone"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Brimstone"}
+                        />Brimstone</li>
+                        <li><input
+                            id='Chamber'
+                            name="main_agent"
+                            type="radio"
+                            value="Chamber"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Chamber"}
+                        />Chamber</li>
+                        <li><input
+                            id='Clove'
+                            name="main_agent"
+                            type="radio"
+                            value="Clove"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Clove"}
+                        />Clove</li>
+                        <li><input
+                            id='Cypher'
+                            name="main_agent"
+                            type="radio"
+                            value="Cypher"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Cypher"}
+                        />Cypher</li>
+                        <li><input
+                            id='Deadlock'
+                            name="main_agent"
+                            type="radio"
+                            value="Deadlock"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Deadlock"}
+                        />Deadlock</li>
+                        <li><input
+                            id='Fade'
+                            name="main_agent"
+                            type="radio"
+                            value="Fade"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Fade"}
+                        />Fade</li>
+                        <li><input
+                            id='Gekko'
+                            name="main_agent"
+                            type="radio"
+                            value="Gekko"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Gekko"}
+                        />Gekko</li>
+                        <li><input
+                            id='Harbor'
+                            name="main_agent"
+                            type="radio"
+                            value="Harbor"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Harbor"}
+                        />Harbor</li>
+                        <li><input
+                            id='Iso'
+                            name="main_agent"
+                            type="radio"
+                            value="Iso"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Iso"}
+                        />Iso</li>
+                        <li><input
+                            id='Jett'
+                            name="main_agent"
+                            type="radio"
+                            value="Jett"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Jett"}
+                        />Jett</li>
+                        <li><input
+                            id='KAYO'
+                            name="main_agent"
+                            type="radio"
+                            value="KAYO"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "KAYO"}
+                        />KAYO</li>
+                        <li><input
+                            id='Killjoy'
+                            name="main_agent"
+                            type="radio"
+                            value="Killjoy"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Killjoy"}
+                        />Killjoy</li>
+                        <li><input
+                            id='Neon'
+                            name="main_agent"
+                            type="radio"
+                            value="Neon"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Neon"}
+                        />Neon</li>
+                        <li><input
+                            id='Omen'
+                            name="main_agent"
+                            type="radio"
+                            value="Omen"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Omen"}
+                        />Omen</li>
+                        <li><input
+                            id='Phoenix'
+                            name="main_agent"
+                            type="radio"
+                            value="Phoenix"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Phoenix"}
+                        />Phoenix</li>
+                        <li><input
+                            id='Raze'
+                            name="main_agent"
+                            type="radio"
+                            value="Raze"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Raze"}
+                        />Raze</li>
+                        <li><input
+                            id='Reyna'
+                            name="main_agent"
+                            type="radio"
+                            value="Reyna"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Reyna"}
+                        />Reyna</li>
+                        <li><input
+                            id='Sage'
+                            name="main_agent"
+                            type="radio"
+                            value="Sage"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Sage"}
+                        />Sage</li>
+                        <li><input
+                            id='Skye'
+                            name="main_agent"
+                            type="radio"
+                            value="Skye"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Skye"}
+                        />Skye</li>
+                        <li><input
+                            id='Sova'
+                            name="main_agent"
+                            type="radio"
+                            value="Sova"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Sova"}
+                        />Sova</li>
+                        <li><input
+                            id='Viper'
+                            name="main_agent"
+                            type="radio"
+                            value="Viper"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Viper"}
+                        />Viper</li>
+                        <li><input
+                            id='Yoru'
+                            name="main_agent"
+                            type="radio"
+                            value="Yoru"
+                            onChange={handleInputChange}
+                            checked={formData.main_agent === "Yoru"}
+                        />Yoru</li>
                     </ul>
                 </div>
             </form>
