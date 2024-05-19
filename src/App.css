@@ -133,3 +133,27 @@ input[type="text"], input[type="email"], textarea {
   width: 100%;
   flex: 1;
 }
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+}
+
+.radio-item input[type="radio"] {
+  margin-right: 5px;
+}
+
+ul.radio-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.radio-list li {
+  margin-bottom: 10px;
+}
